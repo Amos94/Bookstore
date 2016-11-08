@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Mysql - bookstore@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="bookstore">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="bulletin"/>
+    <schema id="3" name="cyborglightningschema"/>
+    <schema id="4" name="forum"/>
+    <schema id="5" name="information_schema"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="new_schema"/>
+    <schema id="8" name="performance_schema"/>
+    <schema id="9" name="sakila"/>
+    <schema id="10" name="test"/>
+    <schema id="11" name="vb"/>
+    <schema id="12" name="wordpress"/>
+    <schema id="13" name="world"/>
+  </database-model>
+</dataSource>
