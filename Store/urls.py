@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from BookStore.views import index, store
+
 
 urlpatterns = [
+    url(r'^$', index, name='index'),
     url(r'^admin/', admin.site.urls),
+
 ]
