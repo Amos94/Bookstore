@@ -5,6 +5,16 @@
     <title>Store</title>
 </head>
 <body>
+{% if request.user.is_authenticated %}
+    <h4>Welcome, {%if request.user.first_name %}
+        {{ request.user.first_name }}
+        {% else %}
+        {{ request.user.username }}
+        {% endif %}!</h4>
+    <a href="{% url 'auth_logout' %}">Log out</a>
+{% else %}
+    <a href="{% url 'auth_login' %}">Log in</a>
+{% endif %}
     <h1>Welcome to the store</h1>
     <p>There are: {{ count }} books in the database.</p>
 </body>

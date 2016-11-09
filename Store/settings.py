@@ -125,3 +125,14 @@ STATIC_URL = '/static/'
 #Registration
 ACCOUNT_ACTIVATION_DAYS = 7 #number of days an account activation will last
 REGISTRATION_AUTO_LOGIN = True #auto login activated
+LOGIN_REDIRECT_URL = '/store'
+
+#Email settings(for sending activation emails)
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "" #change to your host
+EMAIL_HOST_USER = "" #change to your email
+EMAIL_HOST_PASSWORD = "" #change to your email password
+EMAIL_PORT = 587 #leave it like this for TLS
+EMAIL_USE_TLS = True #TLS true
+DEFAULT_FROM_EMAIL = "" #change to your email
