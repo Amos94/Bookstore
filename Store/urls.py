@@ -20,6 +20,7 @@ from BookStore.views import index, store
 
 urlpatterns = [
     url(r'^$', index, name='index'),
+    url(r'^store/', store, name='store'),
     url(r'^admin/', admin.site.urls),
 
 ]
